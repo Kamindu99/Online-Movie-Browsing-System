@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+       
+       <servlet>        
+            <servlet-name> adminlogin </servlet-name>
+            <servlet-class> com.movie.AdminLoginServlet </servlet-class>        
+       </servlet>
+       
+       <servlet-mapping> 
+             <servlet-name> adminlogin</servlet-name>
+             <url-pattern>/adminlogin </url-pattern>
+       </servlet-mapping>
+       
+        <servlet>        
+            <servlet-name> movieadd </servlet-name>
+            <servlet-class> com.movie.MovieAddServlet </servlet-class>        
+       </servlet>
+       
+       <servlet-mapping> 
+             <servlet-name> movieadd</servlet-name>
+             <url-pattern>/movieadd </url-pattern>
+       </servlet-mapping>
+       
+        <servlet>
+            <servlet-name>moviedelete</servlet-name>
+            <servlet-class>com.movie.movieDeleteServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>moviedelete</servlet-name>
+            <url-pattern>/moviedelete</url-pattern>
+       </servlet-mapping>
+       
+       <servlet>
+            <servlet-name>movieupdate</servlet-name>
+            <servlet-class>com.movie.MovieUpdateServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>movieupdate</servlet-name>
+            <url-pattern>/movieupdate</url-pattern>
+       </servlet-mapping>
+       
+       
+       
+       <servlet>        
+            <servlet-name> tvseriesadd </servlet-name>
+            <servlet-class> com.movie.TvSeriesAddServlet </servlet-class>        
+       </servlet>
+       
+       <servlet-mapping> 
+             <servlet-name> tvseriesadd</servlet-name>
+             <url-pattern>/tvseriesadd </url-pattern>
+       </servlet-mapping>
+       
+        <servlet>
+            <servlet-name>tvseriesdelete</servlet-name>
+            <servlet-class>com.movie.TvSeriesDeleteServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>tvseriesdelete</servlet-name>
+            <url-pattern>/tvseriesdelete</url-pattern>
+       </servlet-mapping>
+       
+       <servlet>
+            <servlet-name>tvseriesupdate</servlet-name>
+            <servlet-class>com.movie.TvSeriesUpdateServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>tvseriesupdate</servlet-name>
+            <url-pattern>/tvseriesupdate</url-pattern>
+       </servlet-mapping>
+       
+       
+         <servlet>
+            <servlet-name>contactusadd</servlet-name>
+            <servlet-class>com.movie.ContactusAddServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>contactusadd</servlet-name>
+            <url-pattern>/contactusadd</url-pattern>
+       </servlet-mapping>
+       
+         
+       <servlet>
+            <servlet-name>contactusupdate</servlet-name>
+            <servlet-class>com.movie.ContactusUpdateServlet</servlet-class>
+       </servlet>
+       
+       <servlet-mapping>
+            <servlet-name>contactusupdate</servlet-name>
+            <url-pattern>/contactusupdate</url-pattern>
+       </servlet-mapping>
+       
+ </web-app>
+         
